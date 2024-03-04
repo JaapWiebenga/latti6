@@ -1,0 +1,1504 @@
+/* Importeer lettertypen */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dela+Gothic+One&family=Grape+Nuts&family=Josefin+Sans:wght@100&family=Montserrat:wght@100&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dela+Gothic+One&family=Grape+Nuts&family=Josefin+Sans:wght@100;200;300&family=Montserrat:wght@100&display=swap');
+    
+
+body {
+    font-size: 18px;
+    display: initial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/Zinc.jpg);
+    font-family:'Josefin Sans', sans-serif !important;
+}
+.header {
+    margin-top: 70px;
+}
+   /* cookie.css */
+   #cookie-banner {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #b39c4d;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    display: none; /* We beginnen met het verbergen van de banner */
+}
+#cookie-banner a {
+    color: #8e402a;
+}
+#cookie-banner button {
+    background-color: white;
+    color: #8e402a;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+#cookie-banner button:hover {
+    background-color: #45a049;
+}
+.col-md-3 {
+    width: 100px;
+}
+
+ /* Mobiele stijlen (tot 480px) */
+@media only screen and (max-width: 480px) {
+
+    .header {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;   
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+    }
+    .foto {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .foto img,
+    .foto.links img,
+    .foto.rechts img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .foto.links {
+        margin-right: 10px;
+    }
+    .foto.rechts {
+        margin-left: 10px;
+    }
+    .logo {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 8%;
+        transform: translateX(-50%);
+    }
+    .logo img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    #social-links {
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        z-index: 5;
+    }
+    #social-links a {
+        text-decoration: none;
+    }
+    #social-links img {
+        width: 20px;
+        height: auto;
+    }
+    /* Stijlen voor taal-links */
+    #language-links {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        z-index: 6;
+    }
+    #language-links a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 3px;
+    }
+    #language-links img {
+        width: 20px;
+        height: auto;
+    }
+    .contact-button {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 20px;
+        z-index: 2;
+        font-size: 14px;
+        background-color: #b39c4d;
+        border-radius: 5px;
+    }
+    .contact-button a {
+        display: block;
+        padding: 5px 10px;
+        color: #8e402a;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    #contact-button-container {
+        position: absolute;
+        top: 23px;
+        right: 180px;
+        z-index: 101;
+    }
+    
+    .hover-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -3;
+        background-color: #b39c4d;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        z-index: 3;
+    }
+    .menu-item {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #8e402a;
+        text-align: center;
+    }
+    .contact-button:hover .hover-menu {
+        display: block;
+        right: -20px;
+    }
+
+    .box {
+        padding: 5px;
+        margin: 5px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .col-md-4a,
+    .col-md-4c {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+        position: relative;
+        margin-left: 220px;
+    }
+    .col-md-4b,
+    .col-md-4d {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+.ronde-achtergrond {
+    width: 200px;
+    height: 200px;
+    background-color: #b39c4d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+.ronde-achtergrond h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.foto-achtergronda,
+.foto-achtergrondb,
+.foto-achtergrondc,
+.foto-achtergrondd {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.foto-achtergronda {
+    background-image: url(images/muffin.jpg);
+    top: 93%;
+    left: 8%;
+}
+
+.foto-achtergrondb {
+    background-image: url(images/ambachtfoto.jpg);
+    top: 90%;
+    left: 40%;
+}
+
+.foto-achtergrondc {
+    background-image: url(images/macaron.jpg);
+    top: 93%;
+    left: 12%;
+}
+
+.foto-achtergrondd {
+    background-image: url(images/rodepeper.jpg);
+    top: 90%;
+    left: 40%;
+}
+
+.col-md-6 {
+    flex: 4;
+    margin-right: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.col-md-4 .content {
+    text-align: center;
+}
+
+.col-md-6 .content {
+    text-align: left;
+}
+
+h5 {
+    color: #934b00;
+    font-size: 2.0em;
+    font-family: 'Dancing Script', cursive;
+}
+
+h6 {
+    color: #b39c4d;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    font-size: 16px;
+}
+    .footer {
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .footer p {
+        margin-top: 5px;
+    }
+    .footer .container-fluid {
+        height: 100%;
+        display: flex; 
+    }
+    
+    .footer .col-md-4 {
+        flex: 1; 
+    }
+    
+    .footer .col-md-4.content2 {
+        color: #fff; 
+    }
+    .col-md-4.content2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    .col-md-4.content2 p {
+        margin: 0; 
+    }
+    .col-md-4.content2 a {
+        text-decoration: none; 
+        color: #333; 
+        margin-bottom: 3px; 
+        font-size: 13px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .col-md-4.content2 a:hover {
+        text-decoration: #333 underline; 
+    }
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Added text-align property to center text content */
+    }
+    .form-text {
+        text-align: center;
+        align-items: center;
+    }
+    #contactForm table {
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    #contactForm table td input,
+    #contactForm table td textarea {
+        height: 20px;
+        width: 200px;
+        padding: 10px;
+        background-color: #b39c4d;
+        border: 2px solid #b39c4d;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(142, 64, 42, 0.5);
+    }
+    #contactForm table td textarea {
+        height: 80px;
+    }
+    #contactForm table td input::placeholder,
+    #contactForm table td textarea::placeholder {
+        color: #8e402a;
+    }
+    #contactForm button {
+        border-radius: 50%;
+        padding: 10px;
+        width: 75px;
+        height: 75px;
+        background-color: #b39c4d;
+        color: #8e402a;
+        border: none;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+    #contactForm button:hover {
+        background-color: #333;
+    } 
+    .col-md-4.content4 {
+        position: relative;
+        margin-top: 45px;
+        margin-left: 10px;
+    }
+    .col-md-4.content4 .top-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .col-md-4.content4 .top-text table {
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+    .col-md-4.content4 .top-text td {
+        padding: 2px; 
+        font-size: 13px;
+    }
+    .col-md-4.content4 .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 11px;
+    }
+}
+
+/* Tablet stijlen (481px - 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .header {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;   
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+    }
+    .foto {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .foto img,
+    .foto.links img,
+    .foto.rechts img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .foto.links {
+        margin-right: 10px;
+    }
+    .foto.rechts {
+        margin-left: 10px;
+    }
+    .logo {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 8%;
+        transform: translateX(-50%);
+    }
+    .logo img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    #social-links {
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        z-index: 5;
+    }
+    #social-links a {
+        text-decoration: none;
+    }
+    #social-links img {
+        width: 20px;
+        height: auto;
+    }
+    /* Stijlen voor taal-links */
+    #language-links {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        z-index: 6;
+    }
+    #language-links a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 3px;
+    }
+    #language-links img {
+        width: 20px;
+        height: auto;
+    }
+    .contact-button {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 20px;
+        z-index: 2;
+        font-size: 14px;
+        background-color: #b39c4d;
+        border-radius: 5px;
+    }
+    .contact-button a {
+        display: block;
+        padding: 5px 10px;
+        color: #8e402a;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    #contact-button-container {
+        position: absolute;
+        top: 23px;
+        right: 180px;
+        z-index: 101;
+    }
+    
+    .hover-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -3;
+        background-color: #b39c4d;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        z-index: 3;
+    }
+    .menu-item {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #8e402a;
+        text-align: center;
+    }
+    .contact-button:hover .hover-menu {
+        display: block;
+        right: -20px;
+    }
+
+    .box {
+        padding: 5px;
+        margin: 5px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .col-md-4a,
+    .col-md-4c {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+        position: relative;
+        margin-left: 400px;
+    }
+    .col-md-4b,
+    .col-md-4d {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+.ronde-achtergrond {
+    width: 200px;
+    height: 200px;
+    background-color: #b39c4d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+.ronde-achtergrond h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.foto-achtergronda,
+.foto-achtergrondb,
+.foto-achtergrondc,
+.foto-achtergrondd {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.foto-achtergronda {
+    background-image: url(images/muffin.jpg);
+    top: 93%;
+    left: 25%;
+}
+
+.foto-achtergrondb {
+    background-image: url(images/ambachtfoto.jpg);
+    top: 90%;
+    left: 30%;
+}
+
+.foto-achtergrondc {
+    background-image: url(images/macaron.jpg);
+    top: 93%;
+    left: 12%;
+}
+
+.foto-achtergrondd {
+    background-image: url(images/rodepeper.jpg);
+    top: 90%;
+    left: 30%;
+}
+
+.col-md-6 {
+    flex: 4;
+    margin-right: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.col-md-4 .content {
+    text-align: center;
+}
+
+.col-md-6 .content {
+    text-align: left;
+}
+
+h5 {
+    color: #934b00;
+    font-size: 2.0em;
+    font-family: 'Dancing Script', cursive;
+}
+
+h6 {
+    color: #b39c4d;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    font-size: 16px;
+}
+    .footer {
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .footer p {
+        margin-top: 5px;
+    }
+    .footer .container-fluid {
+        height: 100%;
+        display: flex; 
+    }
+    
+    .footer .col-md-4 {
+        flex: 1; 
+    }
+    
+    .footer .col-md-4.content2 {
+        color: #fff; 
+    }
+    .col-md-4.content2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    .col-md-4.content2 p {
+        margin: 0; 
+    }
+    .col-md-4.content2 a {
+        text-decoration: none; 
+        color: #333; 
+        margin-bottom: 3px; 
+        font-size: 13px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .col-md-4.content2 a:hover {
+        text-decoration: #333 underline; 
+    }
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+    .form-text {
+        text-align: center;
+        align-items: center;
+    }
+    #contactForm table {
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    #contactForm table td input,
+    #contactForm table td textarea {
+        height: 20px;
+        width: 200px;
+        padding: 10px;
+        background-color: #b39c4d;
+        border: 2px solid #b39c4d;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(142, 64, 42, 0.5);
+    }
+    #contactForm table td textarea {
+        height: 80px;
+    }
+    #contactForm table td input::placeholder,
+    #contactForm table td textarea::placeholder {
+        color: #8e402a;
+    }
+    #contactForm button {
+        border-radius: 50%;
+        padding: 10px;
+        width: 75px;
+        height: 75px;
+        background-color: #b39c4d;
+        color: #8e402a;
+        border: none;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+    #contactForm button:hover {
+        background-color: #333;
+    } 
+    .col-md-4.content4 {
+        position: relative;
+        margin-top: 45px;
+        margin-left: 10px;
+    }
+    .col-md-4.content4 .top-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .col-md-4.content4 .top-text table {
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+    .col-md-4.content4 .top-text td {
+        padding: 2px; 
+        font-size: 13px;
+    }
+    .col-md-4.content4 .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 11px;
+    }
+    
+}
+/* Tablet in de landschapsmodus en desktopstijlen (769px - 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+      .header {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;   
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30vh;
+    }
+    .foto {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .foto img,
+    .foto.links img,
+    .foto.rechts img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .foto.links {
+        margin-right: 10px;
+    }
+    .foto.rechts {
+        margin-left: 10px;
+    }
+    .logo {
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 8%;
+        transform: translateX(-50%);
+        border-color: #b39c4d;
+    }
+    .logo img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    /* Stijlen voor taal-links */
+    #language-links {
+        position: absolute;
+        top: 24px;
+        right: 55px;
+        z-index: 6;
+    }
+    #language-links a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 3px;
+    }
+    #language-links img {
+        width: 27px;
+        height: auto;
+    }
+    .contact-button {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 20px;
+        z-index: 2;
+        font-size: 16px;
+        background-color: #b39c4d;
+        border-radius: 5px;
+    }
+    .contact-button a {
+        display: block;
+        padding: 5px 10px;
+        color: #8e402a;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    #contact-button-container {
+        position: absolute;
+        top: 25px;
+        right: 225px;
+        z-index: 101;
+    }
+    
+    .hover-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -3;
+        background-color: #b39c4d;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        z-index: 3;
+    }
+    .menu-item {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #8e402a;
+        text-align: center;
+    }
+    .contact-button:hover .hover-menu {
+        display: block;
+        right: -20px;
+    }
+    #social-links {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 5;
+    }
+    #social-links a {
+        text-decoration: none;
+    }
+    #social-links img {
+        width: 25px;
+        height: auto;
+    }
+    .box {
+        padding: 5px;
+        margin: 5px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-md-2 {
+        flex: 1;
+        padding: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+    .col-md-4a,
+    .col-md-4c {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        flex: 2;
+        padding: 10px;
+        margin-right: auto; 
+        margin-left: 10px; 
+        box-sizing: border-box;
+        position: relative;
+    }
+    .col-md-4b,
+    .col-md-4d {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: right;
+        flex: 2;
+        padding: 10px;
+        margin-right: 10px; 
+        margin-left: 100px; 
+        box-sizing: border-box;
+        position: relative;
+    }
+    .ronde-achtergrond {
+        width: 300px;
+        height: 300px;
+        background-color: #b39c4d;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+    }
+    .ronde-achtergrond h5 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .foto-achtergronda,
+    .foto-achtergrondb,
+    .foto-achtergrondc,
+    .foto-achtergrondd {
+        width: 125px;
+        height: 125px;
+        background-size: cover;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    
+    .foto-achtergronda {
+        background-image: url(images/muffin.jpg);
+        top: 53%;
+        left: 25%;
+    }
+    
+    .foto-achtergrondb {
+        background-image: url(images/ambachtfoto.jpg);
+        top: 60%;
+        left: 60%;
+    }
+    
+    .foto-achtergrondc {
+        background-image: url(images/macaron.jpg);
+        top: 53%;
+        left: 12%;
+    }
+    
+    .foto-achtergrondd {
+        background-image: url(images/rodepeper.jpg);
+        top: 60%;
+        left: 60%;
+    }
+    .col-md-6 {
+        flex: 4;
+        margin-right: 10px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .col-md-4 .content {
+        text-align: center;
+    }
+    .col-md-6 .content {
+        text-align: left;
+    }
+    h5 {
+        color: #934b00;
+        font-size: 2.5em;
+        font-family: 'Dancing Script', cursive;
+    }
+    h6 {
+        color: #b39c4d;
+        font-size: 2em;
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 0.5em;
+        margin-top: 1.5em;
+    }
+    p  {
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 1.5;
+        color: #333;
+        font-size: 16px;
+        
+    }
+    .footer {
+        height: 350px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .footer p {
+        margin-top: 5px;
+    }
+    .footer .container-fluid {
+        height: 100%;
+        display: flex; 
+    }
+    
+    .footer .col-md-4 {
+        flex: 1; 
+    }
+    
+    .footer .col-md-4.content2 {
+        color: #fff; 
+    }
+    .col-md-4.content2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    .col-md-4.content2 p {
+        margin: 0; 
+    }
+    .col-md-4.content2 a {
+        text-decoration: none; 
+        color: #333; 
+        margin-bottom: 3px; 
+        font-size: 13px;
+        text-align: right;
+      
+    }
+    .col-md-4.content2 a:hover {
+        text-decoration: #333 underline; 
+    }
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Added text-align property to center text content */
+    }
+    .form-text {
+        text-align: center;
+        align-items: center;
+    }
+    #contactForm table {
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    #contactForm table td input,
+    #contactForm table td textarea {
+        height: 20px;
+        width: 200px;
+        padding: 10px;
+        background-color: #b39c4d;
+        border: 2px solid #b39c4d;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(142, 64, 42, 0.5);
+    }
+    #contactForm table td textarea {
+        height: 80px;
+    }
+    #contactForm table td input::placeholder,
+    #contactForm table td textarea::placeholder {
+        color: #8e402a;
+    }
+    #contactForm button {
+        border-radius: 50%;
+        padding: 10px;
+        width: 75px;
+        height: 75px;
+        background-color: #b39c4d;
+        color: #8e402a;
+        border: none;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+    #contactForm button:hover {
+        background-color: #333;
+    } 
+    .col-md-4.content4 {
+        position: relative;
+    }
+    .col-md-4.content4 .top-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 45px;
+    }
+    .col-md-4.content4 .top-text table {
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+    .col-md-4.content4 .top-text td {
+        padding: 2px; 
+        font-size: 13px;
+    }
+    .col-md-4.content4 .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 11px;
+    }
+}
+
+/* Grote desktopstijlen (1025px en groter) */
+@media only screen and (min-width: 1025px) {
+    
+    .header {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;   
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30vh;
+    }
+.foto {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+.foto img,
+.foto.links img,
+.foto.rechts img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+.foto.links {
+        margin-right: 10px;
+    }
+.foto.rechts {
+        margin-left: 10px;
+    }
+.logo {
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 8%;
+        transform: translateX(-50%);
+    }
+.logo img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    /* Stijlen voor taal-links */
+#language-links {
+        position: absolute;
+        top: 25px;
+        right: 80px;
+        z-index: 6;
+    }
+#language-links a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 3px;
+    }
+#language-links img {
+        width: 27px;
+        height: auto;
+    }
+.contact-button {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 20px;
+        z-index: 2;
+        font-size: 18px;
+        background-color: #b39c4d;
+        border-radius: 5px;
+    }
+.contact-button a {
+        display: block;
+        padding: 5px 10px;
+        color: #8e402a;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+#contact-button-container {
+        position: absolute;
+        top: 25px;
+        right: 250px;
+        z-index: 3;
+    }
+    
+.hover-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -3;
+        background-color: #b39c4d;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        z-index: 3;
+    }
+.menu-item {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #8e402a;
+        text-align: center;
+    }
+.contact-button:hover .hover-menu {
+        display: block;
+        right: -20px;
+    }
+#social-links {
+        position: absolute;
+        top: 27px;
+        right: 43px;
+        z-index: 5;
+    }
+#social-links a {
+        text-decoration: none;
+    }
+#social-links img {
+        width: 25px;
+        height: auto;
+    }
+.box {
+        padding: 5px;
+        margin: 5px;
+    }
+.row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+.col-md-2 {
+        flex: 1;
+        padding: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+.col-md-4a,
+.col-md-4c {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        flex: 2;
+        padding: 10px;
+        margin-right: auto; 
+        margin-left: 10px; 
+        box-sizing: border-box;
+        position: relative;
+    }
+.col-md-4b,
+.col-md-4d {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: right;
+        flex: 2;
+        padding: 10px;
+        margin-right: 10px; 
+        margin-left: 200px; 
+        box-sizing: border-box;
+        position: relative;
+    }
+.ronde-achtergrond {
+        width: 300px;
+        height: 300px;
+        background-color: #b39c4d;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+    }
+.ronde-achtergrond h5 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .foto-achtergronda,
+    .foto-achtergrondb,
+    .foto-achtergrondc,
+    .foto-achtergrondd {
+        width: 125px; 
+        height: 125px; 
+        background-size: cover;
+        border-radius: 50%; 
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 2; 
+    }
+    
+    .foto-achtergronda {
+        background-image: url(images/muffin.jpg);
+        top: 90%; 
+        left: 12%;
+    }
+    
+    .foto-achtergrondb {
+        background-image: url(images/ambachtfoto.jpg);
+        top: 90%; 
+        left: 40%;
+    }
+    
+    .foto-achtergrondc {
+        background-image: url(images/macaron.jpg);
+        top: 90%; 
+        left: 12%;
+    }
+    
+    .foto-achtergrondd {
+        background-image: url(images/rodepeper.jpg);
+        top: 90%; 
+        left: 55%;
+    }
+    
+.col-md-6 {
+        flex: 4;
+        margin-right: 10px;
+        box-sizing: border-box;
+        position: relative;
+    }
+.col-md-4 .content {
+        text-align: center;
+    }
+.col-md-6 .content {
+        text-align: left;
+    }
+h5 {
+        color: #934b00;
+        font-size: 2.5em;
+        font-family: 'Dancing Script', cursive;
+    }
+h6 {
+        color: #b39c4d;
+        font-size: 2em;
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 0.5em;
+        margin-top: 1.5em;
+    }
+p  {
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 1.5;
+        color: #333;
+        font-size: 16px;
+        
+    }
+.footer {
+        height: 350px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+.footer p {
+        margin-top: 5px;
+    }
+.footer .container-fluid {
+        height: 100%;
+        display: flex; 
+    }
+    
+.footer .col-md-4 {
+        flex: 1; 
+    }
+    
+.footer .col-md-4.content2 {
+        color: #fff; 
+    }
+.col-md-4.content2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+.col-md-4.content2 p {
+        margin: 0; 
+    }
+.col-md-4.content2 a {
+        text-decoration: none; 
+        color: #333; 
+        margin-bottom: 3px; 
+        font-size: 13px;
+        text-align: right;
+        
+    }
+.col-md-4.content2 a:hover {
+        text-decoration: #333 underline; 
+    }
+#contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Added text-align property to center text content */
+    }
+.form-text {
+        text-align: center;
+        align-items: center;
+    }
+#contactForm table {
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+#contactForm table td input,
+#contactForm table td textarea {
+        height: 20px;
+        width: 200px;
+        padding: 10px;
+        background-color: #b39c4d;
+        border: 2px solid #b39c4d;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(142, 64, 42, 0.5);
+    }
+#contactForm table td textarea {
+        height: 80px;
+    }
+#contactForm table td input::placeholder,
+#contactForm table td textarea::placeholder {
+        color: #8e402a;
+    }
+#contactForm button {
+        border-radius: 50%;
+        padding: 10px;
+        width: 75px;
+        height: 75px;
+        background-color: #b39c4d;
+        color: #8e402a;
+        border: none;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+#contactForm button:hover {
+        background-color: #333;
+    } 
+.col-md-4.content4 {
+        position: relative;
+        margin-top: 45px;
+    }
+.col-md-4.content4 .top-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+.col-md-4.content4 .top-text table {
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+.col-md-4.content4 .top-text td {
+        padding: 2px; 
+        font-size: 13px;
+    }
+.col-md-4.content4 .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 11px;
+    }
+}
+
+
+
+
